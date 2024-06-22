@@ -115,15 +115,56 @@ nav ul li {
 .why-block{
     text-align: center;
     padding: 0 2em 2em 2em;
-    background-color: lightpink;
+    background-color: #403861;
 }
 
-.why-block h1{
+.why-block h2{
     padding: 2em 2em 2em 2em;
 }
 /*why you choose end - Lisa*/
 
 /*awesome feature start - Lisa*/
+.awesome p, .awesome h2 {
+    color: #333;
+    text-align: center;
+}
+
+.awesome h2{
+    margin: 0 2em 1em 2em;
+}
+.awesome {
+    padding: 2em;
+    background-color: lightpink;
+}
+
+.awesomeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
+
+.awesomeContainer div{
+    width: 20%;
+    height: 150px;
+    background-color: skyblue;
+    margin: 1em;
+    padding: 1em;
+}
+
+.awesome button{
+    background-color: lightpink;
+    border:none;
+    padding: 0.2em;
+    border-radius: 1em;
+    font-weight:800;
+}
+
+.awesome button:hover{
+    background-color: #403861;
+    color: whitesmoke;
+}
 /* awesome feature end - Lisa*/
 
 /*footer start - Lisa*/
