@@ -1,3 +1,4 @@
+
 /*header start - Parvin*/
 /*header end* - Parvin/
 
@@ -14,6 +15,29 @@
 /*awesome apps end - Timur*/
 
 /*why you choose start - Lisa*/
+.why img{
+    width: 6em;
+    border-radius: 50%;
+}
+
+.why{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-content: center;
+    gap: 20px 25px;
+    padding: 0 5em;
+}
+
+.why-block{
+    text-align: center;
+    padding: 0 2em 2em 2em;
+    background-color: lightpink;
+}
+
+.why-block h1{
+    padding: 2em 2em 2em 2em;
+}
 /*why you choose end - Lisa*/
 
  /*awesome feature start - Lisa*/
