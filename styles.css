@@ -22,6 +22,65 @@ body {
     z-index: 1000;
 }
 
+/*video start - Timur*/
+h2,
+p {
+    color: whitesmoke;
+}
+
+.video-section {
+    background: linear-gradient(#a37d93, #403861);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.features-section {
+    background: linear-gradient(#d185b1, #242424);
+    margin-top: -20px;
+    /*WILL BE DELETED */
+    text-align: center;
+    height: 400px;
+    /*WILL BE DELETED */
+}
+
+/*video end - Timur*/
+
+/*awesome apps start - Timur*/
+
+.features-section {
+    background: linear-gradient(#403861, #292830);
+    margin-top: -20px;          /*WILL BE DELETED */
+    text-align: center;
+    height: 600px;              /*WILL BE DELETED */
+}
+
+span {
+    color: rgb(255, 230, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.features {
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+/*awesome apps end - Timur*/
 .logo {
     font-size: 24px;
     font-weight: 600;
@@ -64,6 +123,11 @@ nav ul li {
 }
 /*why you choose end - Lisa*/
 
+/*awesome feature start - Lisa*/
+/* awesome feature end - Lisa*/
+
+/*footer start - Lisa*/
+/*footer end - Lisa*/
 nav ul li a {
     text-decoration: none;
     color: #333;
