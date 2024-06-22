@@ -1,18 +1,26 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/*header start - Parvin*/
-/*header end - Parvin*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
-/*hero catchy line start - Parvin*/
-/*hero catchy line end - Parvin*/
-
-/*trusted by companies start - Parvin*/
-/*trusted by companies end - Parvin*/
+.parvin-header {
+    width: 100%;
+    background: linear-gradient(to right, skyblue, lightpink, white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
 /*video start - Timur*/
 h2,
@@ -73,8 +81,46 @@ span {
 }
 
 /*awesome apps end - Timur*/
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
 
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
 /*why you choose start - Lisa*/
+.why img{
+    width: 6em;
+    border-radius: 50%;
+}
+
+.why{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-content: center;
+    gap: 20px 25px;
+    padding: 0 5em;
+}
+
+.why-block{
+    text-align: center;
+    padding: 0 2em 2em 2em;
+    background-color: lightpink;
+}
+
+.why-block h1{
+    padding: 2em 2em 2em 2em;
+}
 /*why you choose end - Lisa*/
 
 /*awesome feature start - Lisa*/
@@ -82,3 +128,39 @@ span {
 
 /*footer start - Lisa*/
 /*footer end - Lisa*/
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(182, 183, 255);
+}
+
+main {
+    padding-top: 70px; /* Adjust according to the header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .parvin-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
