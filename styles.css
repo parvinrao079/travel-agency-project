@@ -23,7 +23,7 @@ body {
 }
 
 /*video start - Timur*/
-h2,
+.video-section h2, .video-section 
 p {
     color: whitesmoke;
 }
@@ -70,7 +70,7 @@ p {
     height: 600px;              /*WILL BE DELETED */
 }
 
-span {
+.features-section span {
     color: rgb(255, 230, 0);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -147,11 +147,18 @@ nav ul li {
 
 .awesomeContainer div{
     width: 20%;
-    height: 150px;
+    height: 250px;
     background-color: skyblue;
     margin: 1em;
-    padding: 1em;
+    text-align: center;
 }
+
+.awesomeContainer div p{
+    margin: 1em 0 3em 0;
+    font-size: 2em;
+}
+
+
 
 .awesome button{
     background-color: lightpink;
@@ -159,6 +166,7 @@ nav ul li {
     padding: 0.5em;
     border-radius: 1em;
     font-weight:800;
+    font-size: 1em;
 }
 
 .awesome button:hover{
@@ -168,6 +176,45 @@ nav ul li {
 /* awesome feature end - Lisa*/
 
 /*footer start - Lisa*/
+
+footer {
+    background-color: skyblue;
+}
+
+.footerDiv{
+    display: grid;
+grid-template-areas: 
+'footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading footerHeading'
+'footerHome footerHome footerHome footerHome footerFeatures footerFeatures footerFeatures footerFeatures footerPrices footerPrices footerPrices footerPrices'
+'footerFB footerFB footerFB footerIG footerIG footerIG footerYT footerYT footerYT footerLI footerLI footerLI'; 
+justify-content: center;
+align-content: center;
+align-items: center;
+column-gap: 10px;
+row-gap: 10px;
+padding: 2em;
+}
+
+.footerDiv div{
+    text-align: center;
+    display: table;
+}
+
+.footerDiv div p{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.footerHeading{grid-area: footerHeading; color: #333; margin: 0 0 1em 0;}
+.footerHome{grid-area: footerHome; color: #333;margin: 0 0 1em 0;}
+.footerFeatures{grid-area: footerFeatures; color: #333;margin: 0 0 1em 0;}
+.footerPrices{grid-area: footerPrices; color:#333;margin: 0 0 1em 0;}
+.footerFB{grid-area: footerFB; color: #333;background: radial-gradient(white, lightpink); border-radius: 50%; height: 3em; width: 3em; 
+}
+.footerIG{grid-area: footerIG; color: #333; background: radial-gradient(white, lightpink); border-radius: 50%;height: 3em; width: 3em;}
+.footerYT{grid-area: footerYT; color: #333; background: radial-gradient(white, lightpink); border-radius: 50%;height: 3em; width: 3em;}
+.footerLI{grid-area: footerLI; color: #333; background: radial-gradient(white, lightpink); border-radius: 50%;height: 3em; width: 3em;}
+
 /*footer end - Lisa*/
 nav ul li a {
     text-decoration: none;
