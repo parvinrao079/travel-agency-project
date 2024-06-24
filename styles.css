@@ -223,11 +223,10 @@ padding: 2em;
 .footerHome{grid-area: footerHome; color: #333;margin: 0 0 1em 0;}
 .footerFeatures{grid-area: footerFeatures; color: #333;margin: 0 0 1em 0;}
 .footerPrices{grid-area: footerPrices; color:#333;margin: 0 0 1em 0;}
-.footerFB{grid-area: footerFB; color: #333;background: radial-gradient(white, lightpink); border-radius: 50%; height: 3em; width: 3em; 
-}
-.footerIG{grid-area: footerIG; color: #333; background: radial-gradient(white, lightpink); border-radius: 50%;height: 3em; width: 3em;}
-.footerYT{grid-area: footerYT; color: #333; background: radial-gradient(white, lightpink); border-radius: 50%;height: 3em; width: 3em;}
-.footerLI{grid-area: footerLI; color: #333; background: radial-gradient(white, lightpink); border-radius: 50%;height: 3em; width: 3em;}
+.footerFB{grid-area: footerFB;}
+.footerIG{grid-area: footerIG;}
+.footerYT{grid-area: footerYT;}
+.footerLI{grid-area: footerLI;}
 
 /*footer end - Lisa*/
 nav ul li a {
