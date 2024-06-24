@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .parvin-header {
@@ -28,10 +28,27 @@ p {
     color: whitesmoke;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+/*header start - Parvin*/
+/*header end - Parvin*/
+
+/*hero catchy line start - Parvin*/
+/*hero catchy line end - Parvin*/
+
+/*trusted by companies start - Parvin*/
+/*trusted by companies end - Parvin*/
+
+/*video start - Timur*/
 .video-section {
-    background: linear-gradient(#a37d93, #403861);
-    padding: 50px 20px;
+    height: 100vh auto;
+    background: linear-gradient(rgb(255, 203, 211), #6b6192, #403861);
+    padding: 160px 20px;
     text-align: center;
+    font-size: 26px;
 }
 
 .video-container {
@@ -50,37 +67,56 @@ p {
     height: 100%;
 }
 
-.features-section {
-    background: linear-gradient(#d185b1, #242424);
-    margin-top: -20px;
-    /*WILL BE DELETED */
-    text-align: center;
-    height: 400px;
-    /*WILL BE DELETED */
-}
-
 /*video end - Timur*/
 
 /*awesome apps start - Timur*/
 
+h2,
+p {
+    color: whitesmoke;
+}
+
 .features-section {
-    background: linear-gradient(#403861, #292830);
-    margin-top: -20px;          /*WILL BE DELETED */
+    height: auto;
+    background: linear-gradient(#403861, #365e85, lightpink); 
     text-align: center;
-    height: 600px;              /*WILL BE DELETED */
 }
 
 .features-section span {
     color: rgb(255, 230, 0);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }
 
 .features {
-    margin-top: 5rem;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    padding-top: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.feature .icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    background-color: #cccccc00;
+    border-radius: 50%;
+}
+
+.features-section span {
+    color: rgb(255, 230, 0);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*awesome apps end - Timur*/
+
 .logo {
     font-size: 24px;
     font-weight: 600;
@@ -97,13 +133,14 @@ nav ul {
 nav ul li {
     margin: 0 10px;
 }
+
 /*why you choose start - Lisa*/
-.why img{
+.why img {
     width: 6em;
     border-radius: 50%;
 }
 
-.why{
+.why {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
@@ -112,7 +149,7 @@ nav ul li {
     padding: 0 5em;
 }
 
-.why-block{
+.why-block {
     text-align: center;
     padding: 0 2em 2em 2em;
     background-color: #403861;
@@ -126,6 +163,7 @@ nav ul li {
 .why-block p{
     color: #f5f5f5;
 }
+
 /*why you choose end - Lisa*/
 
 /*awesome feature start - Lisa*/
@@ -251,7 +289,8 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 70px; /* Adjust according to the header height */
+    padding-top: 70px;
+    /* Adjust according to the header height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,5 +311,20 @@ main {
 
     nav ul li {
         margin: 5px 0;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        width: 100%;
     }
 }
