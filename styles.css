@@ -1,17 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
 
 .parvin-header {
     width: 100%;
-    background: linear-gradient(to right, skyblue, lightpink, white);
+    background: linear-gradient(to right, #a37d93, #403861);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +21,100 @@ body {
     z-index: 1000;
 }
 
+.hero-section-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: url('https://picsum.photos/300/200') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 0; /* Adjusted from 80px to 0 to remove the gap */
+    position: relative;
+    color: white; /* Ensure text is readable over the background */
+}
+
+.hero-section-p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add overlay for better text readability */
+    z-index: 1;
+}
+
+.hero-left-p, .hero-right-p {
+    background-color: rgba(245, 245, 245, 0.8); /* Semi-transparent background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    margin: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-left-p h1, .hero-right-p h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-left-p p, .hero-right-p p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.editor-choice-p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hero-left-p button, .hero-right-p button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-left-p button:hover, .hero-right-p button:hover {
+    background-color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-section-p {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero-left-p, .hero-right-p {
+        margin: 10px 0;
+    }
+
+    .hero-left-p h1, .hero-right-p h2 {
+        font-size: 20px;
+    }
+
+    .hero-left-p p, .hero-right-p p {
+        font-size: 14px;
+    }
+
+    .hero-left-p button, .hero-right-p button {
+        padding: 8px 16px;
+    }
+}
+
 /*video start - Timur*/
 h2,
 p {
@@ -29,7 +122,7 @@ p {
 }
 
 .video-section {
-    background: linear-gradient(#a37d93, #403861);
+    background: linear-gradient(to right, #a37d93, #403861);
     padding: 50px 20px;
     text-align: center;
 }
@@ -51,7 +144,7 @@ p {
 }
 
 .features-section {
-    background: linear-gradient(#d185b1, #242424);
+    background: linear-gradient(to right, #a37d93, #403861);
     margin-top: -20px;
     /*WILL BE DELETED */
     text-align: center;
@@ -64,7 +157,7 @@ p {
 /*awesome apps start - Timur*/
 
 .features-section {
-    background: linear-gradient(#403861, #292830);
+    background: linear-gradient(to right, #a37d93, #403861);
     margin-top: -20px;          /*WILL BE DELETED */
     text-align: center;
     height: 600px;              /*WILL BE DELETED */
@@ -84,7 +177,7 @@ span {
 .logo {
     font-size: 24px;
     font-weight: 600;
-    color: #333;
+    color: #ffffff;
 }
 
 nav ul {
@@ -115,7 +208,7 @@ nav ul li {
 .why-block{
     text-align: center;
     padding: 0 2em 2em 2em;
-    background-color: lightpink;
+    background: linear-gradient(to right, #a37d93, #403861);
 }
 
 .why-block h1{
@@ -130,7 +223,7 @@ nav ul li {
 /*footer end - Lisa*/
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
