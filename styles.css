@@ -214,15 +214,24 @@ padding: 2em;
     display: table;
 }
 
-.footerDiv div p{
+.footerDiv div p, .footerDiv div a{
     vertical-align: middle;
     display: table-cell;
 }
 
+.footerDiv a{
+    text-decoration: none;
+    color: #333;
+}
+
+.footerDiv a:hover{
+    color: whitesmoke;
+}
+
 .footerHeading{grid-area: footerHeading; color: #333; margin: 0 0 1em 0;}
-.footerHome{grid-area: footerHome; color: #333;margin: 0 0 1em 0;}
-.footerFeatures{grid-area: footerFeatures; color: #333;margin: 0 0 1em 0;}
-.footerPrices{grid-area: footerPrices; color:#333;margin: 0 0 1em 0;}
+.footerHome{grid-area: footerHome; color: #333;margin: 0 0 1em 0;font-weight:800;}
+.footerFeatures{grid-area: footerFeatures; color: #333;margin: 0 0 1em 0;font-weight:800;}
+.footerPrices{grid-area: footerPrices; color:#333;margin: 0 0 1em 0;font-weight:800;}
 .footerFB{grid-area: footerFB;}
 .footerIG{grid-area: footerIG;}
 .footerYT{grid-area: footerYT;}
