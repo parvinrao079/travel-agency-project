@@ -120,6 +120,11 @@ nav ul li {
 
 .why-block h2{
     padding: 2em 2em 2em 2em;
+    color: whitesmoke;
+}
+
+.why-block p{
+    color: #f5f5f5;
 }
 /*why you choose end - Lisa*/
 
@@ -145,17 +150,21 @@ nav ul li {
     align-content: center;
 }
 
-.awesomeContainer div{
+.awesomeContainer > div{
     width: 20%;
     height: 250px;
     background-color: skyblue;
     margin: 1em;
     text-align: center;
+    box-shadow: 5px 5px 5px #242424;
+    border-radius: 1em;
+    position: relative;
 }
 
 .awesomeContainer div p{
     margin: 1em 0 3em 0;
     font-size: 2em;
+    font-weight: 800;
 }
 
 
@@ -167,7 +176,12 @@ nav ul li {
     border-radius: 1em;
     font-weight:800;
     font-size: 1em;
+    position: absolute;
+    -ms-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
+  box-shadow: 5px 5px 5px #242424;
 }
+
 
 .awesome button:hover{
     background-color: #403861;
