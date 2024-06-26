@@ -440,6 +440,27 @@ nav ul li {
   transform: translate(-50%, -10%);
 }
 
+@media only screen and (max-width: 600px) {
+    .awesomeContainer > div{
+        width: 80%;
+    }
+
+    .awesome button {
+    font-size: 0.9em;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .awesomeContainer > div{
+        width: 40%;
+        
+    }
+}
+@media only screen and (min-width: 992px) {
+    .awesomeContainer > div{
+        width: 20%;
+        
+    }
+}
 
 /* awesome feature end - Lisa*/
 
