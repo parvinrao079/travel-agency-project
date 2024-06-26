@@ -10,17 +10,52 @@
 
 .parvin-header {
     width: 100%;
-    background: linear-gradient(to right, #a37d93, #403861);
+    background: linear-gradient(135deg, #a37d93 0%, #403861 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 200px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
 }
 
+.parvin-header .logo img {
+    height: 150px; /* Increased size for better visibility */
+    border: 2px solid #ffffff; /* White border around the logo */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px; /* Padding inside the border */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for the logo */
+}
+
+.parvin-header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.parvin-header nav ul li {
+    margin: 0 20px;
+}
+
+.parvin-header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.parvin-header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
 .hero-section-p {
     display: flex;
     flex-direction: row;
@@ -28,8 +63,8 @@
     align-items: center;
     background: url('https://picsum.photos/300/200') no-repeat center center;
     background-size: cover;
-    padding: 20px;
-    margin-top: 0; /* Adjusted from 80px to 0 to remove the gap */
+    padding: 40px;
+    margin-top: 150px; /* Add margin to create space between header and section */
     position: relative;
     color: white; /* Ensure text is readable over the background */
 }
@@ -43,35 +78,37 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Add overlay for better text readability */
     z-index: 1;
+    border-radius: 10px; /* Matching rounded corners */
 }
 
 .hero-left-p, .hero-right-p {
-    background-color: rgba(245, 245, 245, 0.8); /* Semi-transparent background */
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: rgba(245, 245, 245, 0.9); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* More pronounced shadow */
     text-align: center;
     flex: 1;
-    margin: 60px;
+    margin: 20px;
     z-index: 2;
     position: relative;
 }
 
 .hero-left-p h1, .hero-right-p h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #403861; /* Matching color scheme */
 }
 
 .hero-left-p p, .hero-right-p p {
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .editor-choice-p {
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     padding: 5px;
     border-radius: 5px;
@@ -79,17 +116,20 @@
 }
 
 .hero-left-p button, .hero-right-p button {
-    background-color: #333;
+    background-color: #403861; /* Matching color scheme */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-left-p button:hover, .hero-right-p button:hover {
-    background-color: #555;
+    background-color: #a37d93; /* Matching hover color */
+    transform: scale(1.05); /* Subtle hover effect */
 }
+
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -115,6 +155,48 @@
     }
 }
 
+/* Trusted companies section */
+.trusted-companies-p {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.trusted-companies-p h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.companies-logos-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.companies-logos-p iframe {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .companies-logos-p {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .companies-logos-p iframe {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
 /*video start - Timur*/
 body {
     margin: 0;
@@ -134,7 +216,7 @@ body {
 /*video start - Timur*/
 .video-section {
     height: 100vh auto;
-    background: linear-gradient(rgb(255, 203, 211), #6b6192, #403861);
+    background: linear-gradient(to right, #a37d93, #403861);
     padding: 160px 20px;
     text-align: center;
     font-size: 26px;
@@ -178,7 +260,7 @@ p {
     background: linear-gradient(to right, #a37d93, #403861);
     margin-top: -20px;          /*WILL BE DELETED */
     height: auto;
-    background: linear-gradient(#403861, #365e85, lightpink);
+    background: linear-gradient(to right, #a37d93, #403861);
     text-align: center;
 }
 
