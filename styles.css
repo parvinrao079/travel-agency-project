@@ -21,7 +21,7 @@
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease-in-out;
-    border-bottom: 0.005em solid whitesmoke;/*added by Lisa for better readability when background and header have the some color*/
+    border-bottom: 0.05em solid whitesmoke;/*added by Lisa for better readability when background and header have the some color*/
 }
 
 .parvin-header .logo img {
