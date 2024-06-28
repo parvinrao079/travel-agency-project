@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif
+    font-family: "Open Sans"; /*Lisa - changed font to sth more modern*/
 }
 
 
@@ -21,6 +21,7 @@
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease-in-out;
+    border-bottom: 0.05em solid whitesmoke;/*added by Lisa for better readability when background and header have the some color*/
 }
 
 .parvin-header .logo img {
@@ -47,6 +48,7 @@
     color: #ffffff;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em; /*Lisa - added font-size for better responsiveness*/
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -173,13 +175,15 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap; /*Lisa - added wrap so for small screens logos appear under each other*/
 }
 
-.companies-logos-p iframe {
+.companies-logos-p img /*Lisa  -changed from iframe to img so code applies*/{
     width: 180px;
     height: 180px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px; /*Lisa - adjusted border radius for same display*/
+    object-fit: cover; /*Lisa - added to ensure rectangular pictures are shown correctly*/
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -190,7 +194,7 @@
         gap: 10px;
     }
 
-    .companies-logos-p iframe {
+    .companies-logos-p img /*Lisa  -changed from iframe to img so code applies*/{
         width: 80%;
         height: auto;
     }
@@ -242,14 +246,15 @@ body {
     height: 100%;
 }
 
-.features-section {
+/*.features-section {
     background: linear-gradient(to right, #a37d93, #403861);
     margin-top: -20px;
-    /*WILL BE DELETED */
+    /*WILL BE DELETED *//*
     text-align: center;
     height: 400px;
     /*WILL BE DELETED */
-}
+
+/*}*/
 
 /*video end - Timur*/
 
@@ -537,17 +542,22 @@ main {
 
 @media (max-width: 768px) {
     .parvin-header {
-        flex-direction: column;
+        /*flex-direction: column; - Lisa turned this off*/
+        align-items: center; /*Lisa - changed from flex-start to center*/
+    }
+
+    .parvin-header nav ul {
+        /*flex-direction: column; - Lisa turned this off*/
         align-items: flex-start;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
+    .parvin-header nav ul li { /*Lisa - added .parvin-header so it only applies to the nav in the header*/
         margin: 5px 0;
+    }
+
+    /*Lisa - added this part for responsiveness*/
+    .parvin-header nav ul li a {
+        padding: 20px;
     }
 
     .features {
@@ -564,4 +574,42 @@ main {
     .video-container {
         width: 100%;
     }
+
+}
+ /*Lisa - added media query for cellphones*/
+@media (max-width: 600px) {
+    
+.parvin-header .logo img {
+    height: 65px; /* Lisa - changed from 100px to 65px for small screens */
+}
+
+/*Lisa - added this parts*/
+.parvin-header nav ul li{
+    margin: 10px;
+}
+
+.parvin-header nav ul li a{
+/*Lisa - added font-size*/
+font-size: 1.1em;
+padding: 3px;
+}
+
+.parvin-header nav ul {
+    margin: 8px;
+}
+
+.parvin-header{
+    padding: 10px;
+}
+
+body {
+    margin: -60px;
+}
+
+.hero-left-p {
+    width: 70%
+}
+.video-container {
+    width: 80%;
+}
 }
