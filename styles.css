@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px;
+    padding: 22px 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@
     align-items: center;
     background: url('https://picsum.photos/300/200') no-repeat center center;
     background-size: cover;
-    padding: 40px;
+    padding: 10px;
     margin-top: 150px; /* Add margin to create space between header and section */
     position: relative;
     color: white; /* Ensure text is readable over the background */
