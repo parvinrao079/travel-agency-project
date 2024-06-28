@@ -175,7 +175,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /*Lisa - added wrap so for small screens logos appear under each other*/
+    flex-wrap: wrap; /*Lisa - added wrap so for slightly screens logos appear under each other*/
 }
 
 .companies-logos-p img /*Lisa  -changed from iframe to img so code applies*/{
@@ -188,17 +188,17 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-    .companies-logos-p {
+/*@media (max-width: 768px) {
+   /*Lisa - not necessary due to flex-wrap .companies-logos-p {
         flex-direction: column;
         gap: 10px;
     }
 
-    .companies-logos-p img /*Lisa  -changed from iframe to img so code applies*/{
-        width: 80%;
+    .companies-logos-p img /*Lisa  -changed from iframe to img so code applies{
+       /* width: 60%; 
         height: auto;
     }
-}
+}*/
 
 
 /*video start - Timur*/
@@ -269,7 +269,6 @@ p {
     background: linear-gradient(to right, #a37d93, #403861);
     margin-top: -20px;          /*WILL BE DELETED */
     height: auto;
-    background: linear-gradient(to right, #a37d93, #403861);
     text-align: center;
 }
 
@@ -603,7 +602,7 @@ padding: 3px;
 }
 
 body {
-    margin: -60px;
+    margin: -60px 0 0 0;
 }
 
 .hero-left-p {
@@ -612,4 +611,14 @@ body {
 .video-container {
     width: 80%;
 }
+
+h2, p{
+    margin: 0 1em;
+}
+
+.h2Timur{
+    font-size: 1em;
+
+}
+
 }
