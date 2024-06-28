@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px;
+    padding: 22px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +24,7 @@
 }
 
 .parvin-header .logo img {
-    height: 150px; /* Increased size for better visibility */
+    height: 100px; /* Increased size for better visibility */
     border: 2px solid #ffffff; /* White border around the logo */
     border-radius: 10px; /* Rounded corners */
     padding: 5px; /* Padding inside the border */
@@ -176,8 +176,8 @@
 }
 
 .companies-logos-p iframe {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
