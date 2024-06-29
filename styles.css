@@ -225,7 +225,7 @@ body {
 .video-section {
     height: 100vh auto;
     background: linear-gradient(to right, #a37d93, #403861);
-    padding: 160px 20px;
+    padding: 40px 20px;
     text-align: center;
     font-size: 26px;
 }
@@ -267,7 +267,6 @@ p {
 
 .features-section {
     background: linear-gradient(to right, #a37d93, #403861);
-    margin-top: -20px;          /*WILL BE DELETED */
     height: auto;
     text-align: center;
 }
@@ -281,12 +280,18 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 100px;
+    margin-top: 50px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
+.pTimur {
+    margin: 50px;
+}
+
 .feature {
-    padding-top: 30px;
+    flex: 1;
+    max-width: 300px;
     width: 150px;
     text-align: center;
 }
@@ -299,10 +304,10 @@ p {
     border-radius: 50%;
 }
 
-.features-section span {
-    color: rgb(255, 230, 0);
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.feature .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*awesome apps end - Timur*/
